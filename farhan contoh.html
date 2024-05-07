@@ -1,0 +1,207 @@
+<br>
+  <head> 
+<title> perojek Website 2</title>
+    
+
+
+
+    
+    <header class="topnav" >
+      
+      <a class="activ" href="#home"></a>
+    
+     
+      <a href="url">Home</a>
+      <a href="url">link text</a>
+      <a href="url">link text</a>
+      
+  
+    </header>
+
+    
+
+  </div>
+  </head>
+
+  <style>
+
+
+body {
+}
+  
+
+header {
+  display: flex;
+  color: rgb(241, 238, 233);
+  padding: 9;
+  background-color: rgb(114, 111, 106);
+  
+}
+
+
+topnav {
+  background-color: #3b3838;
+  overflow: hidden;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #111010;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px; 
+  border-radius: 3cqh;
+  border : 1px solid rgb(233, 224, 224);
+ 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #fff9f9;
+  color: rgb(0, 0, 0);
+  
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  
+  background-color: rgb(240, 237, 234);
+  color: white;
+}
+
+body {
+  background-color:white;
+  
+}
+
+p {
+  color: rgb(0, 0, 0);
+  display: flexbox;
+  text-align: center;
+
+}
+
+
+
+
+
+
+#menu-container {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      padding-top: 20px;
+      transition: 0.5s;
+    }
+
+    #menu-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #menu-list li {
+      padding: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #menu-list li:hover {
+      background-color: #555;
+    }
+
+    #menu-button {
+      position: fixed;
+      top: 40px;
+      left: 24px;
+      font-size: 23px;
+      cursor: pointer;
+      color: #000000;
+      
+    }
+   
+  
+
+  </style>
+  
+  <body>
+    
+   
+    <div id="menu-container">
+
+      <nav class="menu">
+        <img src="your-logo.png" alt="Logo">
+        <p class="menu-text">FARHAN</p>
+        </nav>
+
+      <ul id="menu-list">
+       
+        <li onclick="showNotification('Burger')">Burger</li>
+        <li onclick="showNotification('Pizza')">Pizza</li>
+        <li onclick="showNotification('Salad')">Salad</li>
+        <li onclick="showNotification('Pasta')">Pasta</li>
+
+
+
+       
+      </ul>
+      
+    </div>
+    
+
+    
+    <div id="menu-button" onclick="toggleMenu()">☰</div>
+    
+
+
+
+
+    <div class="content">
+      <hh>
+      <!-- Your page content goes here -->
+      
+      <p> SELAMAT DATANG </p>
+      
+      <h9>halo  </h9>
+      
+      <br> 
+          
+    
+    </hh>
+    </div>
+
+    
+
+    <script>
+    function showNotification(item) {
+      const notification = document.getElementById('notification');
+      notification.innerHTML = `You selected ${item}!`;
+      notification.style.display = 'block';
+
+      setTimeout(() => {
+        notification.style.display = 'none';
+      }, 2000);
+    }
+
+    function toggleMenu() {
+      const menuContainer = document.getElementById('menu-container');
+      const menuButton = document.getElementById('menu-button');
+
+      if (menuContainer.style.left === "-250px") {
+        menuContainer.style.left = "0";
+        menuButton.style.left = "250px";
+      } else {
+        menuContainer.style.left = "-250px";
+        menuButton.style.left = "20px";
+      }
+    }
+  </script>
+  </body>
+
+</html>
